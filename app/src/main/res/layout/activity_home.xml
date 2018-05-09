@@ -7,23 +7,22 @@
     android:layout_height="match_parent"
     tools:context="com.androin.androinapp.Home"
     android:orientation="vertical">
-
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:background="@mipmap/ic_launcher_round"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="100dp"/>
     <TextView
-        android:id="@+id/tv"
-        android:layout_width="wrap_content"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:text="Hello Soubhaxyz!"
-        android:textSize="40dp"
+        android:text="AndroinApp"
         android:layout_gravity="center"
-        android:textColor="#ec3b3b"
-        android:layout_marginTop="20dp"/>
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="next"
-        android:layout_gravity="center"
-        android:textSize="20dp"
-        android:layout_marginTop="30dp"
-        android:onClick="next" />
+        android:gravity="center"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimaryDark"/>
+
+
 
 </LinearLayout>

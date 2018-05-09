@@ -6,17 +6,27 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
+import java.util.logging.Handler;
+import java.util.logging.LogRecord;
+
 public class Home extends AppCompatActivity {
-    TextView tv;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
-        tv= (TextView) findViewById(R.id.tv);
-    }
-    public void next(View v){
-        Intent i=new Intent(Home.this,Next.class);
-        startActivity(i);
+
+//        getSupportActionBar().hide();
+
+        new android.os.Handler().postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                Intent i=new Intent(Home.this,Home2.class);
+                startActivity(i);
+                finish();
+            }
+        },2000);
+
     }
 }
